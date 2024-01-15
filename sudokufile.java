@@ -37,16 +37,16 @@ public class sudokufile extends javax.swing.JFrame {
     private void resetgame()
     {
       JButton[] predefinedbutton={b4,b7,b9,b10,b14,b15,b17,b19,b20,b21,b22,b24,b26,b32,b33,b35,b38,b39,b43,b44,b47,b49,b50,b56,b58,b61,b62,b63,b65,b67,b68,b72,b73,b75,b78};
-      JButton[][] bt={
-          {b1,b2,b3,b4,b5,b6,b7,b8,b9},
-          {b10,b11,b12,b13,b14,b15,b15,b17,b18},
-          {b19,b20,b21,b22,b23,b24,b25,b26,b27},
-          {b28,b29,b30,b31,b32,b33,b34,b35,b36},
-          {b37,b38,b39,b40,b41,b42,b43,b44,b45},
-          {b46,b47,b48,b49,b50,b51,b52,b53,b54},
-          {b55,b56,b57,b58,b59,b60,b61,b62,b63},
-          {b64,b65,b66,b67,b68,b69,b70,b71,b72},
-          {b73,b74,b75,b76,b77,b78,b79,b80,b81}
+    JButton[][] bt={
+          {b1,b2,b3,b10,b11,b12,b19,b20,b21},
+          {b4,b5,b6,b13,b14,b15,b22,b23,b24},
+          {b7,b8,b9,b16,b17,b18,b25,b26,b27},
+          {b28,b29,b30,b37,b38,b39,b46,b47,b48},
+          {b31,b32,b33,b40,b41,b42,b49,b50,b51},
+          {b34,b35,b36,b43,b44,b45,b52,b53,b54},
+          {b55,b56,b57,b64,b65,b66,b73,b74,b75},
+          {b58,b59,b60,b67,b68,b69,b76,b77,b78},
+          {b61,b62,b63,b70,b71,b72,b79,b80,b81}
       };
       for(int i=0;i<9;i++)
       {
@@ -72,17 +72,17 @@ public class sudokufile extends javax.swing.JFrame {
     private void seesolution()
     {
         JButton[] predefinedbutton={b4,b7,b9,b10,b14,b15,b17,b19,b20,b21,b22,b24,b26,b32,b33,b35,b38,b39,b43,b44,b47,b49,b50,b56,b58,b61,b62,b63,b65,b67,b68,b72,b73,b75,b78};
-      JButton[][] bt={
-          {b1,b2,b3,b4,b5,b6,b7,b8,b9},
-          {b10,b11,b12,b13,b14,b15,b16,b17,b18},
-          {b19,b20,b21,b22,b23,b24,b25,b26,b27},
-          {b28,b29,b30,b31,b32,b33,b34,b35,b36},
-          {b37,b38,b39,b40,b41,b42,b43,b44,b45},
-          {b46,b47,b48,b49,b50,b51,b52,b53,b54},
-          {b55,b56,b57,b58,b59,b60,b61,b62,b63},
-          {b64,b65,b66,b67,b68,b69,b70,b71,b72},
-          {b73,b74,b75,b76,b77,b78,b79,b80,b81}
-      }; 
+     JButton[][] bt={
+          {b1,b2,b3,b10,b11,b12,b19,b20,b21},
+          {b4,b5,b6,b13,b14,b15,b22,b23,b24},
+          {b7,b8,b9,b16,b17,b18,b25,b26,b27},
+          {b28,b29,b30,b37,b38,b39,b46,b47,b48},
+          {b31,b32,b33,b40,b41,b42,b49,b50,b51},
+          {b34,b35,b36,b43,b44,b45,b52,b53,b54},
+          {b55,b56,b57,b64,b65,b66,b73,b74,b75},
+          {b58,b59,b60,b67,b68,b69,b76,b77,b78},
+          {b61,b62,b63,b70,b71,b72,b79,b80,b81}
+      };
       if(flag==true)
       {
           flag=false;
@@ -117,17 +117,17 @@ public class sudokufile extends javax.swing.JFrame {
     private void checkmoves()
     {
        JButton[] predefinedbutton={b4,b7,b9,b10,b14,b15,b17,b19,b20,b21,b22,b24,b26,b32,b33,b35,b38,b39,b43,b44,b47,b49,b50,b56,b58,b61,b62,b63,b65,b67,b68,b72,b73,b75,b78};
-      JButton[][] bt={
-          {b1,b2,b3,b4,b5,b6,b7,b8,b9},
-          {b10,b11,b12,b13,b14,b15,b15,b17,b18},
-          {b19,b20,b21,b22,b23,b24,b25,b26,b27},
-          {b28,b29,b30,b31,b32,b33,b34,b35,b36},
-          {b37,b38,b39,b40,b41,b42,b43,b44,b45},
-          {b46,b47,b48,b49,b50,b51,b52,b53,b54},
-          {b55,b56,b57,b58,b59,b60,b61,b62,b63},
-          {b64,b65,b66,b67,b68,b69,b70,b71,b72},
-          {b73,b74,b75,b76,b77,b78,b79,b80,b81}
-      }; 
+     JButton[][] bt={
+          {b1,b2,b3,b10,b11,b12,b19,b20,b21},
+          {b4,b5,b6,b13,b14,b15,b22,b23,b24},
+          {b7,b8,b9,b16,b17,b18,b25,b26,b27},
+          {b28,b29,b30,b37,b38,b39,b46,b47,b48},
+          {b31,b32,b33,b40,b41,b42,b49,b50,b51},
+          {b34,b35,b36,b43,b44,b45,b52,b53,b54},
+          {b55,b56,b57,b64,b65,b66,b73,b74,b75},
+          {b58,b59,b60,b67,b68,b69,b76,b77,b78},
+          {b61,b62,b63,b70,b71,b72,b79,b80,b81}
+      };
        for(int i=0;i<9;i++)
            {
           for(int j=0;j<9;j++)
